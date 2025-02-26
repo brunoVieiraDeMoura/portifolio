@@ -1,11 +1,11 @@
 import { Box, Button } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
-export default function HomeProfile() {
+export default function HomeProfileMobile() {
   return (
     <Box
       sx={{
-        background: 'linear-gradient(120deg, #222 80%, #333)',
+        background: 'linear-gradient(180deg, #222 50%, #333)',
         display: 'flex',
       }}
     >
@@ -17,7 +17,7 @@ export default function HomeProfile() {
           alignItems: 'center',
           p: 2,
           mt: 4,
-          mb: 4,
+          mb: 2,
         }}
       >
         <Image
@@ -51,7 +51,7 @@ export default function HomeProfile() {
             size="large"
             variant="contained"
           >
-            Projetos
+            Contactar
           </Button>
           <Button
             sx={{
@@ -64,7 +64,7 @@ export default function HomeProfile() {
             variant="outlined"
             color="primary"
           >
-            Contato
+            Projetos
           </Button>
         </Box>
       </Box>

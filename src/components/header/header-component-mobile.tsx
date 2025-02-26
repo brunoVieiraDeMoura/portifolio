@@ -11,7 +11,7 @@ import {
 import Link from 'next/link';
 import React from 'react';
 
-export default function HeaderComponent() {
+export default function HeaderComponentMobile() {
   const [openDrawer, setOpenDrawer] = React.useState(false);
   return (
     <>
