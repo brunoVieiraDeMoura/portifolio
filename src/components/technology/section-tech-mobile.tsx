@@ -3,9 +3,9 @@ import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 export default function TechComponentMobile() {
   return (
-    <Box sx={{ height: '400px', background: '#333', width: '100%' }}>
+    <Box sx={{ height: '100%', background: '#333', width: '100%' }}>
       <Box sx={{ p: 2 }}>
-        <Divider sx={{ background: '#ccc', mb: 4 }} variant="middle" />
+        <Divider sx={{ background: '#555', mb: 4 }} />
         <Typography
           sx={{ mt: 2 }}
           textAlign="center"
@@ -82,6 +82,7 @@ export default function TechComponentMobile() {
             </Typography>
           </Box>
         </Box>
+        <Divider sx={{ background: '#555', mt: 5, mb: 2 }} />
       </Box>
     </Box>
   );

@@ -5,10 +5,23 @@ export default function HomeProfileMobile() {
   return (
     <Box
       sx={{
-        background: 'linear-gradient(180deg, #222 50%, #333)',
+        position: 'relative',
+        background: 'linear-gradient(180deg, rgba(255,255,255,0.1) , #333 60%)',
         display: 'flex',
       }}
     >
+      <Box
+        sx={{ position: 'absolute', height: '100%', width: '100%', zIndex: -1 }}
+      >
+        <Image
+          priority={true}
+          src="/background.jpg"
+          alt="always add alt"
+          fill
+          style={{ objectFit: 'cover', objectPosition: '65% 20%' }}
+        />
+      </Box>
+
       <Box
         sx={{
           display: 'flex',
@@ -51,7 +64,7 @@ export default function HomeProfileMobile() {
             size="large"
             variant="contained"
           >
-            Contactar
+            Contatos
           </Button>
           <Button
             sx={{
