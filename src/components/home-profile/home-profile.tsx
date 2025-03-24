@@ -14,7 +14,7 @@ export default function HomeProfileMobile() {
         sx={{ position: 'absolute', height: '100%', width: '100%', zIndex: -1 }}
       >
         <Image
-          priority={true}
+          priority
           src="/background.jpg"
           alt="always add alt"
           fill
