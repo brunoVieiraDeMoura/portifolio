@@ -190,17 +190,6 @@ export default function TutorialComponentMobile() {
             </Box>
           </Box>
         </Paper>
-        <Button
-          sx={{
-            background:
-              'linear-gradient(200deg,rgba(150,150,150,.9)  ,rgba(50,50,50,.9) 40% )',
-            color: '#ccc',
-            fontWeight: 'bold',
-          }}
-          variant="contained"
-        >
-          ver todos os projetos
-        </Button>
       </Box>
     </Box>
   );

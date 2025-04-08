@@ -1,6 +1,8 @@
 import { Box, Button } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import CodeIcon from '@mui/icons-material/Code';
 export default function HomeProfileMobile() {
   return (
     <Box
@@ -29,8 +31,14 @@ export default function HomeProfileMobile() {
           flexDirection: 'column',
           alignItems: 'center',
           p: 2,
-          mt: 4,
-          mb: 2,
+          mt: {
+            xs: 4,
+            md: 6,
+          },
+          mb: {
+            xs: 4,
+            md: 6,
+          },
         }}
       >
         <Image
@@ -51,11 +59,24 @@ export default function HomeProfileMobile() {
         >
           Olá, eu sou Bruno Moura! 👋
         </Typography>
-        <Typography textAlign="center" variant="h2" color="grey.200">
+        <Typography
+          sx={{
+            width: {
+              xs: '100%',
+              md: '70%',
+              lg: '40%',
+            },
+          }}
+          textAlign="center"
+          variant="h2"
+          color="grey.200"
+        >
           Desenvolvedor Web, Front-end & Designer
         </Typography>
         <Box sx={{ display: 'flex', gap: 2, mt: 3 }}>
           <Button
+            href="https://wa.me/5521999433890?text=Ol%C3%A1%20Bruno%2C%20estou%20entrando%20em%20contato%20para%20saber%20sua%20disponibilidade%20para%20trabalhos%2C%20podemos%20conversar%3F"
+            startIcon={<WhatsAppIcon />}
             sx={{
               textTransform: 'none',
               background: '#444',
@@ -64,9 +85,10 @@ export default function HomeProfileMobile() {
             size="large"
             variant="contained"
           >
-            Contatos
+            Contato
           </Button>
           <Button
+            startIcon={<CodeIcon />}
             sx={{
               textTransform: 'none',
               border: '2px solid #444444',

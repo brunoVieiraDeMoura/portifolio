@@ -7,7 +7,12 @@ export default function TechComponentMobile() {
       <Box sx={{ p: 2 }}>
         <Divider sx={{ background: '#555', mb: 4 }} />
         <Typography
-          sx={{ mt: 2 }}
+          sx={{
+            mt: {
+              xs: 2,
+              md: 8,
+            },
+          }}
           textAlign="center"
           variant="h2"
           color="grey.200"
@@ -17,72 +22,196 @@ export default function TechComponentMobile() {
         </Typography>
         <Box
           sx={{
-            mt: 4,
+            mt: 8,
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
             borderRadius: 2,
             alignItems: 'center',
-            gap: 2,
+            gap: {
+              xs: 2,
+              md: 4,
+              lg: 6,
+            },
           }}
         >
           {/* NEXT */}
           <Box
             sx={{
-              width: '100%',
               display: 'flex',
-              flexDirection: 'column',
+              justifyContent: 'center',
               alignItems: 'center',
+              gap: 4,
             }}
           >
-            <Image alt="logo next" height={64} width={64} src="/next.png" />
-            <Typography variant="h4" color="grey.400">
-              Next JS
-            </Typography>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                width: '60%',
+              }}
+            >
+              <Image alt="logo next" height={64} width={64} src="/next.png" />
+              <Typography textAlign="center" variant="h4" color="grey.400">
+                Next JS
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                display: {
+                  xs: 'none',
+                  md: 'flex',
+                },
+                flexDirection: 'column',
+              }}
+            >
+              <Typography variant="h5" color="grey.300">
+                Desenvolvimentos Web
+              </Typography>
+              <Typography variant="body1" color="grey.500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                earum saepe quae cum mollitia recusandae voluptates esse
+                incidunt, similique, hic cumque!
+              </Typography>
+            </Box>
           </Box>
           {/* MUI */}
           <Box
             sx={{
-              width: '100%',
               display: 'flex',
-              flexDirection: 'column',
+              justifyContent: 'center',
               alignItems: 'center',
+              gap: 4,
             }}
           >
-            <Image alt="logo mui" height={64} width={64} src="/mui.png" />
-            <Typography variant="h4" color="grey.400">
-              Material UI
-            </Typography>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                width: '60%',
+              }}
+            >
+              <Image alt="logo mui" height={64} width={64} src="/mui.png" />
+              <Typography textAlign="center" variant="h4" color="grey.400">
+                Material UI
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                display: {
+                  xs: 'none',
+                  md: 'flex',
+                },
+                flexDirection: 'column',
+              }}
+            >
+              <Typography variant="h5" color="grey.300">
+                Estilização Responsiva
+              </Typography>
+              <Typography variant="body1" color="grey.500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                earum saepe quae cum mollitia recusandae voluptates esse
+                incidunt, similique, hic cumque!
+              </Typography>
+            </Box>
           </Box>
           {/* REACT */}
           <Box
             sx={{
-              width: '100%',
               display: 'flex',
-              flexDirection: 'column',
+              justifyContent: 'center',
               alignItems: 'center',
+              gap: 4,
             }}
           >
-            <Image alt="logo mui" height={64} width={64} src="/react.png" />
-            <Typography variant="h4" color="grey.400">
-              React
-            </Typography>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                width: '60%',
+              }}
+            >
+              <Image alt="logo mui" height={64} width={64} src="/react.png" />
+              <Typography variant="h4" color="grey.400">
+                React
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                display: {
+                  xs: 'none',
+                  md: 'flex',
+                },
+                flexDirection: 'column',
+              }}
+            >
+              <Typography variant="h5" color="grey.300">
+                Aplicativos Mobile
+              </Typography>
+              <Typography variant="body1" color="grey.500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                earum saepe quae cum mollitia recusandae voluptates esse
+                incidunt, similique, hic cumque!
+              </Typography>
+            </Box>
           </Box>
           {/* TS */}
           <Box
             sx={{
-              width: '100%',
               display: 'flex',
-              flexDirection: 'column',
+              justifyContent: 'center',
               alignItems: 'center',
+              gap: 4,
             }}
           >
-            <Image alt="logo mui" height={64} width={64} src="/ts.png" />
-            <Typography variant="h4" color="grey.400">
-              Type Script
-            </Typography>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                width: '60%',
+              }}
+            >
+              <Image alt="logo mui" height={64} width={64} src="/ts.png" />
+              <Typography textAlign="center" variant="h4" color="grey.400">
+                Type Script
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                display: {
+                  xs: 'none',
+                  md: 'flex',
+                },
+                flexDirection: 'column',
+              }}
+            >
+              <Typography variant="h5" color="grey.300">
+                Código Tipado
+              </Typography>
+              <Typography variant="body1" color="grey.500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                earum saepe quae cum mollitia recusandae voluptates esse
+                incidunt, similique, hic cumque!
+              </Typography>
+            </Box>
           </Box>
         </Box>
-        <Divider sx={{ background: '#555', mt: 5, mb: 2 }} />
+        <Divider
+          sx={{
+            background: '#555',
+            mt: {
+              xs: 5,
+              md: 12,
+            },
+            mb: {
+              xs: 2,
+              md: 6,
+            },
+          }}
+        />
       </Box>
     </Box>
   );
