@@ -1,8 +1,10 @@
+'use client';
 import { Box, Button } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import CodeIcon from '@mui/icons-material/Code';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+
 export default function HomeProfileMobile() {
   return (
     <Box
@@ -88,7 +90,11 @@ export default function HomeProfileMobile() {
             Contato
           </Button>
           <Button
-            startIcon={<CodeIcon />}
+            startIcon={<PictureAsPdfIcon />}
+            href="/bruno.moura.code-curriculum.pdf"
+            download="Bruno-Moura-Curriculo.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             sx={{
               textTransform: 'none',
               border: '2px solid #444444',
@@ -99,7 +105,7 @@ export default function HomeProfileMobile() {
             variant="outlined"
             color="primary"
           >
-            Projetos
+            Curriculum
           </Button>
         </Box>
       </Box>

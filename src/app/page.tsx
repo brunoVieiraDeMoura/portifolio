@@ -4,6 +4,7 @@ import HeaderComponentMobile from '../components/header/header-component-mobile'
 import TechComponentMobile from '../components/technology/section-tech-mobile';
 import TechniquesComponentMobile from '../components/techniques/section-techniques-mobile';
 import TutorialComponentMobile from '../components/tutorial/tutorial-mobile';
+import React from 'react';
 
 export default function Home() {
   return (

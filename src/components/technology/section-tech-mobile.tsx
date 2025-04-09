@@ -1,3 +1,4 @@
+'use client';
 import { Box, Divider } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
@@ -17,7 +18,7 @@ export default function TechComponentMobile() {
         <Typography
           sx={{
             mt: {
-              xs: 2,
+              sm: 2,
               md: 8,
             },
           }}

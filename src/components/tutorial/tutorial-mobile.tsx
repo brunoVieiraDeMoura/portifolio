@@ -1,9 +1,10 @@
 import { Box, Paper, Typography, Button, Divider } from '@mui/material';
 import Image from 'next/image';
-
+import React from 'react';
 export default function TutorialComponentMobile() {
   return (
     <Box
+      id="projetos"
       sx={{
         position: 'relative',
         background:

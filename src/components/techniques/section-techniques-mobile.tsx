@@ -1,3 +1,4 @@
+'use client';
 import { Box, Paper, Typography } from '@mui/material';
 import BrushIcon from '@mui/icons-material/Brush';
 import GroupsIcon from '@mui/icons-material/Groups';
