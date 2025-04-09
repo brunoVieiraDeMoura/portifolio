@@ -13,7 +13,7 @@ import React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
-
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 export default function HeaderComponentMobile() {
   const [openDrawer, setOpenDrawer] = React.useState(false);
   return (
@@ -131,6 +131,21 @@ export default function HeaderComponentMobile() {
                       </Box>
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/bruno.moura.code-curriculum.pdf"
+                      download="Bruno-Moura-Curriculo.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Box sx={{ display: 'flex', gap: 1, mt: 6 }}>
+                        <PictureAsPdfIcon sx={{ color: '#ccc' }} />
+                        <Typography variant="body1" color="grey.400">
+                          Curriculum
+                        </Typography>
+                      </Box>
+                    </Link>
+                  </li>
                 </ul>
               </Box>
             </Drawer>
@@ -172,7 +187,19 @@ export default function HeaderComponentMobile() {
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                     <AlternateEmailIcon sx={{ color: '#ccc' }} />
                     <Typography variant="body1" color="grey.400">
-                      email
+                      Email
+                    </Typography>
+                  </Box>
+                </Link>
+                <Link
+                  href={
+                    'mailto:bruno.moura.code@gmail.com?subject=Contato%20para%20trabalhos&body=Olá%20Bruno%2C%20gostaria%20de%20falar%20sobre%20uma%20possível%20colaboração.'
+                  }
+                >
+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                    <PictureAsPdfIcon sx={{ color: '#ccc' }} />
+                    <Typography variant="body1" color="grey.400">
+                      Curriculum
                     </Typography>
                   </Box>
                 </Link>

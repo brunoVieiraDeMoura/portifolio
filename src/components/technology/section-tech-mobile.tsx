@@ -36,8 +36,7 @@ export default function TechComponentMobile() {
             borderRadius: 2,
             alignItems: 'center',
             gap: {
-              xs: 2,
-              md: 4,
+              xs: 4,
               lg: 6,
             },
           }}
@@ -48,7 +47,9 @@ export default function TechComponentMobile() {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              gap: 4,
+              gap: {
+                xs: 4,
+              },
             }}
           >
             <Box
