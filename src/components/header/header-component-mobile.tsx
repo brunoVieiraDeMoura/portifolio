@@ -192,9 +192,10 @@ export default function HeaderComponentMobile() {
                   </Box>
                 </Link>
                 <Link
-                  href={
-                    'mailto:bruno.moura.code@gmail.com?subject=Contato%20para%20trabalhos&body=Olá%20Bruno%2C%20gostaria%20de%20falar%20sobre%20uma%20possível%20colaboração.'
-                  }
+                  href="/bruno.moura.code-curriculum.pdf"
+                  download="Bruno-Moura-Curriculo.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                     <PictureAsPdfIcon sx={{ color: '#ccc' }} />
