@@ -1,4 +1,4 @@
-import { Box, Paper, Typography, Button } from '@mui/material';
+import { Box, Paper, Typography, Button, Divider } from '@mui/material';
 import Image from 'next/image';
 
 export default function TutorialComponentMobile() {
@@ -21,14 +21,43 @@ export default function TutorialComponentMobile() {
           style={{ objectFit: 'cover', objectPosition: '65% 20%' }}
         />
       </Box>
-      <Box sx={{ p: 2, display: 'flex', flexDirection: 'column', gap: 2 }}>
+      <Box
+        sx={{
+          p: 2,
+          display: {
+            xs: 'flex',
+            md: 'none',
+          },
+          flexDirection: 'column',
+          gap: 2,
+        }}
+      >
+        <Divider
+          sx={{
+            background: 'rgba(255,255,255,0.1)',
+            mt: {
+              xs: 5,
+              md: 6,
+            },
+            mb: {
+              xs: 2,
+              md: 6,
+            },
+          }}
+        />
         <Typography
           gutterBottom
           textAlign="center"
           variant="h2"
-          color="grey.200"
+          sx={{
+            mb: {
+              xs: 2,
+              md: 4,
+            },
+          }}
+          color="grey.300"
         >
-          Projetos
+          Projetos Desenvolvidos
         </Typography>
         <Paper
           sx={{
